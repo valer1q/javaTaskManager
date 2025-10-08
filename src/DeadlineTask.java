@@ -4,7 +4,7 @@ public class DeadlineTask extends Task {
     public int getDeadline() { return deadline; }
     public void setDeadline(int deadline) { this.deadline = deadline; }
 
-    public DeadlineTask(String taskName, String taskDescription, int taskCreationDate, int deadline ) {
+    public DeadlineTask(String taskName, String taskDescription, String taskCreationDate, int deadline ) {
         super(taskName, taskDescription, taskCreationDate);
         this.deadline = deadline;
     }

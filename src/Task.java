@@ -1,9 +1,9 @@
 public class Task {
     private String taskName;
     private String taskDescription;
-    private int taskCreationDate;
+    private String taskCreationDate;
 
-    public Task(String taskName, String taskDescription, int taskCreationDate){
+    public Task(String taskName, String taskDescription, String taskCreationDate){
         this.taskName = taskName;
         this.taskDescription = taskDescription;
         this.taskCreationDate = taskCreationDate;
@@ -17,7 +17,7 @@ public class Task {
     public String getTaskDescription() { return taskDescription; }
     public void setTaskDescription(String description) { this.taskDescription = description; }
 
-    public int getTaskCreationDate(){return taskCreationDate;}
+    public String getTaskCreationDate(){return taskCreationDate;}
     public void setCreationDate(){ this.taskCreationDate = taskCreationDate;}
 
     @Override

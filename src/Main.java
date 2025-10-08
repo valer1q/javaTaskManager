@@ -1,23 +1,21 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
         Task simpleTask = new Task(
                 "do kt",
                 "play dota 2",
-                7);
+                "08.07.1994");
 
         DeadlineTask deadlineTask = new DeadlineTask(
                 "javaLibrary",
                 "need to do it",
-                2,
+                "09.07.1994",
                 2);
 
         RecurringTask recurringTask = new RecurringTask(
                 "play dota 2",
                 "hard katka dota 2",
-                12,
+                "10.07.1994",
                 "every day");
 
 
@@ -25,7 +23,7 @@ public class Main {
         TaskManager.addTask(deadlineTask);
         TaskManager.addTask(recurringTask);
 
-        TaskManager.getTasks();
+        TaskManager.getSortedTasksByDate();
     }
 
 

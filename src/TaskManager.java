@@ -16,5 +16,14 @@ public class TaskManager {
     public static void getTasks() {
         System.out.println(tasks);
     }
+
+    public static void sortByCreationDate() {
+        tasks.sort(Comparator.comparing(Task::getTaskCreationDate));
+    }
+
+    public static void getSortedTasksByDate() {
+        sortByCreationDate();
+        getTasks();
+    }
 }
 

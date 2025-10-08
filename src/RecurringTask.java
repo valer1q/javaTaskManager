@@ -8,7 +8,7 @@ public class RecurringTask extends Task{
     public String getTaskRecurenceInterval() { return taskRecurenceInterval; }
     public void setTaskRecurenceInterval(int description) { this.taskRecurenceInterval = taskRecurenceInterval;}
 
-    public RecurringTask(String taskName, String taskDescripton, int creationDate, String taskRecurenceInterval){
+    public RecurringTask(String taskName, String taskDescripton, String creationDate, String taskRecurenceInterval){
         super(taskName, taskDescripton, creationDate);
         this.startDate = startDate;
         this.taskRecurenceInterval = taskRecurenceInterval;
